@@ -13,9 +13,6 @@ router.all("/*",cors(),(req,res)=>{
 
 
 
-
-
-
 router.all("/testme", (req, res) => 
 { console.log(req.params.productId)
     return res.status(400).send({ status: false, message: "Endpoint is not correct" }) })
