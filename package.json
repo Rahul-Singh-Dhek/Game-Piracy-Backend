@@ -1,6 +1,6 @@
 {
 
-  "name":"Game_Piracy",
+  "name":"Game",
   "version":"1.0.0",
   "main":"index.js",
   "scripts": {
