@@ -7,6 +7,9 @@ const cors=require('cors')
 router.get("/getMovies",cors(),userContoller.getGamePagenation);
 router.post("/insertGames",cors(),userContoller.insertGames);
 router.get("/getCount",cors(),userContoller.getCount)
+router.all("/*",cors(),(req,res)=>{
+    return res.status(200).send({status:true,message:"This is the homepage."})
+})
 
 
 
